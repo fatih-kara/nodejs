@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Records API
+  version: 1.0
+paths:
+  /records/:
+    post:
+      summary: Returns all records.
+      requestBody:
+      responses:
+        '200':    # status code
+          description: Successfully returned all records
+        '400':
+          description: Server returned validation error
+        '500':
+          description: Failed to retrieve information from server
